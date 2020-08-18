@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="banner_code" id="home">
+        <header>
+            <h2>BEXA</h2>
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#service_y">service</a></li>
+                <li><a href="#devlop">contact us</a></li>
+                <li><a href="#ftr">about us</a></li>
+            </ul>
+
+            <!-- this is the mobile code menu -->
+            <div class="mb_set">
+                <img src="images/men.png" alt="menu" onclick="openMenu()">
+                <div class="sidenav" id="sidecode">
+                   <button onclick="closeCode()" class="close" id="cls">&times;</button>
+                   <a href="#home">home</a>
+                   <a href="#service_y">service</a>
+                   <a href="#devlop">contact us</a>
+                   <a href="#ftr">about us</a>
+                   <p class="abs_p_code">exllent code with aj</p>
+                </div>
+            </div>
+        </header> 
+        <div class="room_header">
+            <div class="text">
+                <h2>exllent code with aj</h2>
+                <h4>developer,youtube,freelance ect..</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam nam cupiditate, iste vitae excepturi asperiores magni perferendis aspernatur ipsa tempore.</p>
+                <button>github</button>
+            </div> 
+            <div class="vd_set">
+                <div class="vide_content">
+                    <video autoplay muted loop>
+                        <source src="video/save.mp4" type="video/mp4">
+                    </video>
+                    <div class="overlay_set"></div>
+                </div>
+                
+            </div> 
+        </div>
+    </div>
+    <section class="ser_vide" id="service_y">
+        <h2>service</h2>
+        <div class="bx_center">
+            <div class="box"  data-aos="fade-up">
+                <div class="img_set">
+                    <img src="images/service/grfd.PNG" alt="fire">
+                </div>
+                <div class="list_box_items">
+                    <ul>
+                        <li>developer</li>
+                        <li>youtuber</li>
+                        <li>freelancer</li>
+                        <li>editor</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-up">
+                <div class="img_set">
+                    <img src="images/service/r.PNG" alt="fire 2">
+                </div>
+                <div class="list_box_items">
+                    <ul>
+                        <li>developer</li>
+                        <li>youtuber</li>
+                        <li>freelancer</li>
+                        <li>editor</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-down">
+                <div class="img_set">
+                    <img src="images/service/sdfsd.PNG" alt="laptop">
+                </div>
+                <div class="list_box_items">
+                    <ul>
+                        <li>developer</li>
+                        <li>youtuber</li>
+                        <li>freelancer</li>
+                        <li>editor</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="code_ext" id="devlop">
+        <h1>contact us</h1>
+        <div class="center_space_rool_form">
+            <div class="im_room_odd">
+                <div class="img_sete" data-aos="zoom-in"></div>
+                <h3>exellent code with aj</h3>
+            </div>
+        <div class="form_set" data-aos="fade">
+            <h2>feel your valid data</h2>
+            <form action="">
+                <input type="text" class="input_root" placeholder="user">
+                <input type="email" class="input_root" placeholder="email">
+                <textarea name="" id="" cols="5" rows="5" class="txtar" placeholder="message"></textarea>
+                <div class="sb_btn">
+                    <input type="button" value='click me'>
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <footer id="ftr">
+        <p>@j_development</p>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        function openMenu(){
+           var x =  document.getElementById('sidecode').style.width='100%';
+        }
+        function closeCode(){
+            document.getElementById('sidecode').style.width='0%';
+        }
+
+        
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        })
+        AOS.init({
+            offset: 300,
+            duration: 1000,
+        });
+    </script>
+</body>
+</html>
